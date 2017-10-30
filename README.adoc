@@ -1,0 +1,28 @@
+= Example project: Reagent client side routing and scroll restore with Bidi and Accountant
+
+A simple example trying to demonstrate a way to do client side routing including scroll restore on history navigation.
+https://github.com/juxt/bidi[Bidi] and https://github.com/venantius/accountant[Accountant] in https://reagent-project.github.io/[Reagent] projects.
+
+The routing parts of this example are elaborated on in https://pez.github.io/2016/03/01/Reagent-clientside-routing-with-Bidi-and-Accountant.html[this blog post].
+
+## Setup
+
+The project is configured to support an  interactive development
+workflow using https://github.com/bhauman/lein-figwheel[Figwheel]. To start the example run:
+
+    $ lein repl
+
+wait for the `scroll-restore.user` name space to load and then issue:
+
+    scroll-restore.user> (start)
+
+Open your browser at http://localhost:3449/[localhost:3449]. You will
+have Figwheel's magic enabled.
+
+If you are using Emacs you can start the repl using `cider-jack-in` and enjoy
+a CIDER enabled development workflow. (This is extra handy for when you are learning
+how to set up Bidi routing tables.)
+
+## License
+
+Use however you want, at your own risk.
